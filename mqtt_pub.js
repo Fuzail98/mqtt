@@ -20,7 +20,6 @@ app.post('/off',()=>{
     client.publish(topic, 'OFF', { qos: 0, retain: false }, (error) => {
       if (error) {
         console.log(error)
-        console.log('Error')
       } 
       else{
         console.log('Connected')
